@@ -263,7 +263,8 @@ function handleSwipe() {
     if (Math.abs(distance) < 50) {
         return;
     }
-if (distance > 0) {
+
+    if (distance > 0) {
         previousImage();
     } else {
         nextImage();
@@ -322,7 +323,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ایجاد تأخیر خیلی ظریف
     const delay = index % 4;
     if (delay > 0) {
-      el.classList.add(reveal-delay-${delay});
+      el.classList.add(`reveal-delay-${delay}`);
     }
   });
 
