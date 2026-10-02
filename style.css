@@ -2000,4 +2000,12 @@ display: none !important;
 
 .project-gallery {
   min-height: 0 !important;
+}/* FIX — HERO MOBILE */
+@media (max-width: 767px) {
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain !important;
+    object-position: center;
+  }
 }
